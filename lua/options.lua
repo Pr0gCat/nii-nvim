@@ -10,7 +10,7 @@ local g = vim.g
 local o = vim.o
 
 cmd('syntax enable') 	-- syntax highlighting
-o.rnu = true         	-- relative line numbers
+o.rnu = false         	-- relative line numbers
 o.nu = true         	-- line numbers
 o.mouse = 'a'       	-- mouse controls
 o.cursorline = true 	-- highlight line cursor is in
