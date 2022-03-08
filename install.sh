@@ -1,5 +1,6 @@
 #!/bin/sh
 
-mv ~/.config/nvim ~/.config/nvim.bk
-mkdir ~/.cofig/nvim
+rm -rf ~/.config/nvim.bk
+mv -f ~/.config/nvim ~/.config/nvim.bk
+mkdir ~/.config/nvim
 cp -rv ./ ~/.config/nvim

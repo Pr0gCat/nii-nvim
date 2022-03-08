@@ -2,25 +2,27 @@ require('packer').startup({
 	function(use)
 		-- packer self management
 		use('wbthomason/packer.nvim')
-
+		
+		-- COC autocompletion
+		use {'neoclide/coc.nvim', branch = 'release'}
 		-- {{{ lsp/autocompletion/snippets
 		-- lsp plugins
-		use('neovim/nvim-lspconfig')
-		use('onsails/lspkind-nvim')
+		-- use('neovim/nvim-lspconfig')
+		-- use('onsails/lspkind-nvim')
 
 		-- autocompletion
-		use({
-			'hrsh7th/nvim-cmp',
-			requires = {
-				{ 'hrsh7th/cmp-nvim-lsp' },
-				{ 'hrsh7th/cmp-path' },
-				{ 'hrsh7th/cmp-buffer' },
-			},
-		})
+		--use({
+		--	'hrsh7th/nvim-cmp',
+		--	requires = {
+		--		{ 'hrsh7th/cmp-nvim-lsp' },
+		--		{ 'hrsh7th/cmp-path' },
+		--		{ 'hrsh7th/cmp-buffer' },
+		--	},
+		--})
 
 		-- snippets
 		use('sirver/ultisnips')
-		use('quangnguyen30192/cmp-nvim-ultisnips')
+		--use('quangnguyen30192/cmp-nvim-ultisnips')
 		-- }}}
 
 		-- {{{ utility plugins

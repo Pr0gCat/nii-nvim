@@ -39,22 +39,6 @@ map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 map('n', 'WW', ":w<CR>", opt)
 -- }}}
 
--- {{{ autocompletion mappings for cmp
-local cmp = require('cmp')
-M.cmp_mappings = {
-
-	['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
-	['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
-	['<C-Space>'] = cmp.mapping.complete(),
-	['<C-d>'] = cmp.mapping.scroll_docs(-4),
-	['<C-f>'] = cmp.mapping.scroll_docs(4),
-	['<C-e>'] = cmp.mapping.close(),
-	['<CR>'] = cmp.mapping.confirm({
-		behavior = cmp.ConfirmBehavior.Insert,
-		select = true,
-	}),
-}
--- }}}
 
 -- {{{ gitsigns mappings
 M.gitsigns_mappings = {
