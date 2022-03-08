@@ -5,25 +5,8 @@ require('packer').startup({
 		
 		-- COC autocompletion
 		use {'neoclide/coc.nvim', branch = 'release'}
-		-- {{{ lsp/autocompletion/snippets
-		-- lsp plugins
-		-- use('neovim/nvim-lspconfig')
-		-- use('onsails/lspkind-nvim')
-
-		-- autocompletion
-		--use({
-		--	'hrsh7th/nvim-cmp',
-		--	requires = {
-		--		{ 'hrsh7th/cmp-nvim-lsp' },
-		--		{ 'hrsh7th/cmp-path' },
-		--		{ 'hrsh7th/cmp-buffer' },
-		--	},
-		--})
-
 		-- snippets
 		use('sirver/ultisnips')
-		--use('quangnguyen30192/cmp-nvim-ultisnips')
-		-- }}}
 
 		-- {{{ utility plugins
 		-- these plugins are all realted to editor configs
@@ -37,6 +20,7 @@ require('packer').startup({
 		use('sbdchd/neoformat')
 		use('phaazon/hop.nvim')
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
+		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		-- }}}
 
 		-- {{{ imporved syntax plugins

@@ -8,9 +8,8 @@ vim.g.coc_global_extensions = {
 	'coc-eslint', 
 	'coc-vetur',
 	-- Other
-	'coc-docker', 
-	'coc-markdownlint', 
-	'coc-markdown-preview-enhanced', 
+	'coc-docker',
+	'coc-markdownlint',  
 	'coc-python',
 	'coc-yaml',
 	'coc-xml',

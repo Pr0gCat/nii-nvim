@@ -26,7 +26,7 @@ local M = {}
 -- {{{ misc bindings
 vim.g.mapleader = ' ' -- Map leader key to space
 map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
-map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
+map('', '<C-_>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
 map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
@@ -36,7 +36,7 @@ map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to syst
 map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 
 -- write buffer changes
-map('n', 'WW', ":w<CR>", opt)
+map('n', '<C-s>', ":w<CR>", opt)
 -- }}}
 
 
