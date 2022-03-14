@@ -72,10 +72,10 @@ map('n', '<leader>bd', ':bd<CR>', { noremap = true })
 -- }}}
 
 -- {{{ window navigation
-map('n', '<leader>h', ':wincmd h<CR>', opt)
-map('n', '<leader>j', ':wincmd j<CR>', opt)
-map('n', '<leader>k', ':wincmd k<CR>', opt)
-map('n', '<leader>l', ':wincmd l<CR>', opt)
+map('n', '<C-w>j', ':wincmd h<CR>', opt)
+-- map('n', '<leader>j', ':wincmd j<CR>', opt)
+-- map('n', '<leader>k', ':wincmd k<CR>', opt)
+map('n', '<C-w>k', ':wincmd l<CR>', opt)
 -- }}}
 
 -- {{{ terminal commands

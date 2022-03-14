@@ -42,6 +42,7 @@ require('packer').startup({
 		use('sainnhe/everforest')
 		use('relastle/bluewery.vim')
 		use('haishanh/night-owl.vim')
+		use('NLKNguyen/papercolor-theme')
 		-- }}}
 		--
 	end,
