@@ -3,8 +3,10 @@ require('packer').startup({
 		-- packer self management
 		use('wbthomason/packer.nvim')
 		
-		-- COC autocompletion
-		use {'neoclide/coc.nvim', branch = 'release'}
+		-- {{{ COC autocompletion and syntax highlights
+		use({'neoclide/coc.nvim', branch = 'release'})
+		use({'tjvr/vim-nearley'})
+		-- }}}
 		-- snippets
 		use('sirver/ultisnips')
 
