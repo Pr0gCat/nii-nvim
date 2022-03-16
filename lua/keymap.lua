@@ -27,7 +27,7 @@ local M = {}
 vim.g.mapleader = ' ' -- Map leader key to space
 map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-_>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
-map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
+map('', '<A-t>', ':NvimTreeToggle<CR>', opt)--":lua require('config.plug.nvimtree').toggle_tree()<CR>", opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
 map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
 
@@ -76,6 +76,11 @@ map('n', '<C-w>j', ':wincmd h<CR>', opt)
 -- map('n', '<leader>j', ':wincmd j<CR>', opt)
 -- map('n', '<leader>k', ':wincmd k<CR>', opt)
 map('n', '<C-w>k', ':wincmd l<CR>', opt)
+
+-- barbar keybinds
+map('n', '<A-,>', ':BufferPrevious<CR>', opt)
+map('n', '<A-.>', ':BufferNext<CR>', opt)
+map('n', '<A-c>', ':BufferClose<CR>', opt)
 -- }}}
 
 -- {{{ terminal commands

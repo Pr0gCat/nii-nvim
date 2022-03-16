@@ -16,7 +16,7 @@ o.mouse = 'a'       	-- mouse controls
 o.cursorline = true 	-- highlight line cursor is in
 o.modeline = true   	-- enable modlines for files
 o.modelines = 5			-- number of modelines
-
+o.cmdheight = 1
 o.errorbells = false 	-- auditory stimulation annoying
 
 opt.ruler = false		-- how line number/column

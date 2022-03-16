@@ -6,7 +6,7 @@ return {
 	require('config.plug.coc'),
 	require('config.plug.hop'),
 	require('config.plug.lualine'),
-	require('config.plug.tabline'),
+	require('config.plug.barbar'),
 	require('config.plug.nvimtree'),
 	require('config.plug.gitsigns'),
 	require('config.plug.ultisnips'),
