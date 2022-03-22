@@ -39,6 +39,9 @@ map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 map('n', '<C-s>', ":w<CR>", opt)
 -- }}}
 
+-- {{{ COC
+map('', '<C-space>', 'coc#refresh()', opt)
+-- }}}
 
 -- {{{ gitsigns mappings
 M.gitsigns_mappings = {

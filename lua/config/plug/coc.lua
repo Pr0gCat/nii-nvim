@@ -1,5 +1,6 @@
 vim.g.coc_global_extensions = {
 	'coc-git',	
+	'coc-tabnine',
 	-- Web
 	'coc-json',  
 	'coc-tsserver', 
