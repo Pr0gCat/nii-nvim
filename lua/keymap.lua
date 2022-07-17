@@ -87,9 +87,9 @@ map('n', '<A-c>', ':BufferClose<CR>', opt)
 -- }}}
 
 -- {{{ terminal commands
-map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
-map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
-map('t', '<C-esc>', '<C-\\><C-n>', opt)
+-- map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
+-- map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
+-- map('t', '<esc>', '<C-\\><C-n>', opt)
 -- }}}
 
 -- {{{ telescope pullup

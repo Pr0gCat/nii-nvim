@@ -16,6 +16,7 @@ return {
 	require('config.plug.nvimcomment'),
 	require('config.plug.nvimcolorizer'),
 	require('config.plug.treesitter'),
+	require('config.plug.termtoggle')
 }
 
 -- # vim foldmethod=marker
