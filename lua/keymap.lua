@@ -24,7 +24,7 @@ local M = {}
 --]]
 
 -- {{{ misc bindings
-vim.g.mapleader = ' ' -- Map leader key to space
+vim.g.mapleader = '\\' -- Map leader key to space
 map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-_>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<A-t>', ':NvimTreeToggle<CR>', opt)--":lua require('config.plug.nvimtree').toggle_tree()<CR>", opt) -- toggle nvimtree
@@ -87,9 +87,8 @@ map('n', '<A-c>', ':BufferClose<CR>', opt)
 -- }}}
 
 -- {{{ terminal commands
--- map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
 -- map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
--- map('t', '<esc>', '<C-\\><C-n>', opt)
+map('t', '<esc>', '<C-\\><C-n>', opt)
 -- }}}
 
 -- {{{ telescope pullup
