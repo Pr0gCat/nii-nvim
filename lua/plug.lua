@@ -24,13 +24,9 @@ require('packer').startup({
 		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
 		use({'akinsho/bufferline.nvim'})
-		use({
- 		   's1n7ax/nvim-terminal',
-    		config = function()
-        		vim.o.hidden = true
-        		require('nvim-terminal').setup()
-    		end,
-		})
+		use({"akinsho/toggleterm.nvim", tag = 'v2.*', config = function()
+  			require("toggleterm").setup()
+		end})
 		-- }}}
 
 		-- {{{ imporved syntax plugins
