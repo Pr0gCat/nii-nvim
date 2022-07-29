@@ -29,7 +29,7 @@ require('packer').startup({
 
 		-- {{{ imporved syntax plugins
 		-- these add in a bit more bling and flair to nvim
-		use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
+		use({ 'nvim-treesitter/nvim-treesitter' })
 		use({ 'glepnir/dashboard-nvim', disable = false })
 		use('norcalli/nvim-colorizer.lua')
 		-- }}}
