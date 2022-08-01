@@ -23,14 +23,15 @@ require('packer').startup({
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
 		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
-		use({'akinsho/bufferline.nvim'})
+		use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 		use({"akinsho/toggleterm.nvim", tag = 'v2.*'})
 		-- }}}
 
 		-- {{{ imporved syntax plugins
 		-- these add in a bit more bling and flair to nvim
 		use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
-		use({ 'glepnir/dashboard-nvim', disable = false })
+		use('glepnir/dashboard-nvim')
+		--use({ 'glepnir/dashboard-nvim', disable = false })
 		use('norcalli/nvim-colorizer.lua')
 		-- }}}
 
