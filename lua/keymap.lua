@@ -25,8 +25,8 @@ local M = {}
 
 -- {{{ misc bindings
 vim.g.mapleader = '\\' -- Map leader key to space
-map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
-map('', '<C-_>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
+-- map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
+map('', '<C-/>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<M-t>', ':NvimTreeToggle<CR>', opt)--":lua require('config.plug.nvimtree').toggle_tree()<CR>", opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
 map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
