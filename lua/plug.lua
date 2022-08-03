@@ -21,7 +21,7 @@ require('packer').startup({
 		use('sbdchd/neoformat')
 		use('phaazon/hop.nvim')
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
-		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
+		-- use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
 		use({'akinsho/bufferline.nvim'})
 		use({"akinsho/toggleterm.nvim", tag = 'v2.*'})
