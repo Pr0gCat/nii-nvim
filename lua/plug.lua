@@ -3,10 +3,14 @@ require('packer').startup({
 		-- packer self management
 		use('wbthomason/packer.nvim')
 		
-		-- {{{ COC autocompletion and syntax highlights
-		use({'neoclide/coc.nvim', branch = 'release'})
-		use({'tjvr/vim-nearley'})
-		-- }}}
+		use({
+			'hrsh7th/nvim-cmp',
+			requires = {
+				{ 'hrsh7th/cmp-nvim-lsp' },
+				{ 'hrsh7th/cmp-path' },
+				{ 'hrsh7th/cmp-buffer' },
+			},
+		})	
 		-- snippets
 		use('sirver/ultisnips')
 

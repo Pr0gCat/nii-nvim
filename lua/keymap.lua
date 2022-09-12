@@ -24,7 +24,7 @@ local M = {}
 --]]
 
 -- {{{ misc bindings
-vim.g.mapleader = '\\' -- Map leader key to space
+vim.g.mapleader = '\\' -- Map leader key to backslash
 -- map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-/>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<M-t>', ':NvimTreeToggle<CR>', opt)--":lua require('config.plug.nvimtree').toggle_tree()<CR>", opt) -- toggle nvimtree
@@ -37,10 +37,6 @@ map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 
 -- write buffer changes
 map('n', '<C-s>', ":w<CR>", opt)
--- }}}
-
--- {{{ COC
-map('', '<C-space>', 'coc#refresh()', opt)
 -- }}}
 
 -- {{{ gitsigns mappings
@@ -86,11 +82,6 @@ map('n', '<M-.>', ':BufferNext<CR>', opt)
 map('n', '<M-c>', ':BufferClose<CR>', opt)
 -- }}}
 
--- {{{ terminal commands
--- map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
--- map('t', '<esc>', '<C-\\><C-n>', opt)
--- }}}
-
 -- {{{ telescope pullup
 map('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
 map('n', '<leader>fF', ':Telescope file_browser<CR>', { noremap = true })
@@ -102,6 +93,22 @@ map('n', '<leader>fG', ':Telescope git_branches<CR>', { noremap = true })
 -- hop.nvim
 map('n', '<leader>aH', ':HopWord<CR>', opt)
 map('n', '<leader>ah', ':HopLine<CR>', opt)
+
+-- cmp.nvim
+local cmp = require('cmp')
+M.cmp_mappings = {
+
+	['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+	['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+	['<C-Space>'] = cmp.mapping.complete(),
+	['<C-d>'] = cmp.mapping.scroll_docs(-4),
+	['<C-f>'] = cmp.mapping.scroll_docs(4),
+	['<C-e>'] = cmp.mapping.close(),
+	['<CR>'] = cmp.mapping.confirm({
+		behavior = cmp.ConfirmBehavior.Insert,
+		select = true,
+	}),
+}
 
 -- returns any externally-required keymaps for usage
 return M

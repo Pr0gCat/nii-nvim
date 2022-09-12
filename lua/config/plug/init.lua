@@ -3,7 +3,8 @@ This init file loads all of the plugin configuration files
 --]]
 
 return {
-	require('config.plug.coc'),
+	-- require('config.plug.coc'),
+	require('config.plug.cmp'),
 	require('config.plug.hop'),
 	require('config.plug.lualine'),
 	require('config.plug.barbar'),
