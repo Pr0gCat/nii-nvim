@@ -29,7 +29,7 @@ require('packer').startup({
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
 		use({'akinsho/bufferline.nvim'})
 		use({"akinsho/toggleterm.nvim", tag = 'v2.*'})
-		-- }}}
+	-- }}}
 
 		-- {{{ imporved syntax plugins
 		-- these add in a bit more bling and flair to nvim

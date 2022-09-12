@@ -30,7 +30,8 @@ o.shiftwidth = 4
 o.expandtab = false    	-- tabs -> spaces
 o.smartindent = true    -- nice indenting
 
-o.foldmethod = 'marker' -- set fold method to marker
+o.foldmethod = 'expr' -- set fold method to marker
+o.foldexpr = 'nvim_treesitter#foldexpr()'
 
 -- backup/swap files
 opt.swapfile = false  	-- have files saved to swap
