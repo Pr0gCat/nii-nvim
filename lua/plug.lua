@@ -23,8 +23,9 @@ require('packer').startup({
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
 		use({'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'})
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
-		use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+		use({'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'})
 		use({"akinsho/toggleterm.nvim", tag = 'v2.*'})
+		use({'kyazdani42/nvim-web-devicons'})
 		-- }}}
 
 		-- {{{ imporved syntax plugins
