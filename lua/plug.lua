@@ -3,12 +3,26 @@ require('packer').startup({
 		-- packer self management
 		use('wbthomason/packer.nvim')
 		
-		-- {{{ COC autocompletion and syntax highlights
-		use({'neoclide/coc.nvim', branch = 'release'})
-		use({'tjvr/vim-nearley'})
-		-- }}}
+		
+	-- {{{ lsp/autocompletion/snippets
+		-- lsp plugins
+		use('neovim/nvim-lspconfig')
+		use('onsails/lspkind-nvim')
+
+		-- autocompletion
+		use({
+			'hrsh7th/nvim-cmp',
+			requires = {
+				{ 'hrsh7th/cmp-nvim-lsp' },
+				{ 'hrsh7th/cmp-path' },
+				{ 'hrsh7th/cmp-buffer' },
+			},
+		})
+
 		-- snippets
 		use('sirver/ultisnips')
+		use('quangnguyen30192/cmp-nvim-ultisnips')
+	-- }}}
 
 		-- {{{ utility plugins
 		-- these plugins are all realted to editor configs
