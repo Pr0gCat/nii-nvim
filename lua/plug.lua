@@ -3,6 +3,12 @@ require('packer').startup({
 		-- packer self management
 		use('wbthomason/packer.nvim')
 		
+		-- {{{ lsp/autocompletion/snippets
+		-- lsp plugins
+		use('neovim/nvim-lspconfig')
+		use('onsails/lspkind-nvim')
+
+		-- autocompletion
 		use({
 			'hrsh7th/nvim-cmp',
 			requires = {
@@ -10,10 +16,13 @@ require('packer').startup({
 				{ 'hrsh7th/cmp-path' },
 				{ 'hrsh7th/cmp-buffer' },
 			},
-		})	
+		})
+
 		-- snippets
 		use('sirver/ultisnips')
-
+		use('quangnguyen30192/cmp-nvim-ultisnips')
+		-- }}}
+	
 		-- {{{ utility plugins
 		-- these plugins are all realted to editor configs
 		use({ 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } })
@@ -29,6 +38,7 @@ require('packer').startup({
 		use({'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}})
 		use({'akinsho/bufferline.nvim'})
 		use({"akinsho/toggleterm.nvim", tag = 'v2.*'})
+		use({'kyazdani42/nvim-web-devicons'})
 	-- }}}
 
 		-- {{{ imporved syntax plugins
